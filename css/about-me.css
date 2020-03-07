@@ -1,4 +1,10 @@
 .main p
 {
-    text-align: justify;
+     text-align: justify;
+}
+
+.photo
+{
+     width: 300px;
+     margin: 70px;
 }

@@ -10,10 +10,7 @@ h1
      font-family: 'Prompt',sans-serif;
 }
 
-div
-{
-     /* border: 1px solid black; */
-}
+/* div {border: 1px solid black;} */
 
 a
 {
@@ -77,10 +74,68 @@ a
     font-size: 22px;
 }
 
+.main .main_logo
+{
+     display: none;
+}
+
+/* BELOW HERE, I SETUP THE RESPONSIVE MENU */
+label
+{
+     margin: 0 40px 0 0;
+     font-size: 26px;
+     line-height: 70px;
+     width: 26px;
+     float: right;
+}
+
+#toggle {display: none;}
+.hamburguer {display: none;}
+
 @media  (max-width: 800px)
 {
-     .sidebar
+     /* Here I change the margins of the main text, because they get very small in small screens, so I fix that */
+     .main p
      {
+         margin: 0 10%;
+         font-size: 22px;
+     }
+
+     .main .main_logo
+     {
+          display: block;
+          margin-top: 100px;
+     }
+
+     label {cursor: pointer;}
+     .sidebar {display: none;}
+
+     .hamburguer
+     {
+          background-color: white;
+          width: 100%;
+          position: fixed;
+          display: block;
+          text-align: right;
+          height: 70px;
+          border-bottom: 1px solid #EAEAEB;
+     }
+
+     .menu
+     {
+          margin-top: 90px;
+          text-align: right;
+          width: 100%;
           display: none;
      }
+
+     .cell
+     {
+          background-color: white;
+          text-align: right;
+          margin-right: 40px;
+     }
+
+     #toggle:checked + .menu {display: block;}
+     .main {margin-top: 70px;}
 }

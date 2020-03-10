@@ -49,6 +49,12 @@ a
      text-align: left;
      font-size: 25px;
      font-weight: 100;
+     transition: transform 300ms ease-in-out;
+}
+
+.cell:hover
+{
+     transform: translate(20px);
 }
 
 .cell a
@@ -57,7 +63,10 @@ a
      color: black;
 }
 
-.cell a:hover  {color: grey;}
+.cell a:hover  
+{
+     color: grey;
+}
 
 .main
 {

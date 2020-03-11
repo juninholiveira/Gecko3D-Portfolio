@@ -8,7 +8,7 @@
      grid-auto-rows: 250px;
 }
 
-.image_grid_container > div > img
+.image_grid_container > div > a > img
 {
      width: 100%;
      height: 100%;

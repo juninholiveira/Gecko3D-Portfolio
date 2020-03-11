@@ -57,6 +57,14 @@ a
      transform: translate(20px);
 }
 
+@media  (max-width: 800px)
+{
+     .cell:hover
+     {
+          transform: translate(-20px);
+     }
+}
+
 .cell a
 {
      text-decoration: none;

@@ -63,7 +63,7 @@ body.lb-disable-scrolling {
     width: 32px;
     height: 32px;
     margin: 0 auto;
-    background: url(../imgs/loading.gif) no-repeat
+    background: url(../icons/loading.gif) no-repeat
 }
 
 .lb-nav {
@@ -81,7 +81,7 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
     outline: 0;
-    background-image: url(data:imgs/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+    background-image: url(data:icons/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
 }
 
 .lb-next, .lb-prev {
@@ -94,7 +94,7 @@ body.lb-disable-scrolling {
     width: 34%;
     left: 0;
     float: left;
-    background: url(../imgs/prev.png) left 48% no-repeat;
+    background: url(../icons/prev.png) left 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity .6s;
@@ -112,7 +112,7 @@ body.lb-disable-scrolling {
     width: 64%;
     right: 0;
     float: right;
-    background: url(../imgs/next.png) right 48% no-repeat;
+    background: url(../icons/next.png) right 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity .6s;
@@ -175,7 +175,7 @@ body.lb-disable-scrolling {
     float: right;
     width: 30px;
     height: 30px;
-    background: url(../imgs/close.png) top right no-repeat;
+    background: url(../icons/close.png) top right no-repeat;
     text-align: right;
     outline: 0;
     filter: alpha(Opacity=70);

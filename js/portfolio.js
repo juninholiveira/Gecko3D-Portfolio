@@ -10,7 +10,7 @@ docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, ht
 if(docHeight != 'undefined')
 {
     //The offset needed to the button show up will be the height of the page divided by 4
-    offset = docHeight / 4;
+    offset = docHeight / 6;
 }
 
 //Add scroll event listener
@@ -74,5 +74,40 @@ function easeInOut(t, power)
     else
     {
         return 0.5 * (2 - Math.pow(2 * (1 - t), power));
+    }
+}
+
+//Below here i code the Lightbox script
+document.addEventListener('click', lightboxClick);
+
+function lightboxClick(event)
+{
+    var elem = event.target,
+        elemID = elem.getAttribute('id'),
+        lightboxImg = document.getElementById('lightbox-image'),
+        lightbox = document.getElementById("lightbox-overlay"),
+        newImg = new Image();
+
+    //If we click as element with the attribute "data-lightbox", show the overlay    
+    if(elem.hasAttribute('data-lightbox'))
+    {
+        event.preventDefault();
+
+        newImg.onload = function()
+        {
+            lightboxImg.src = this.src;
+        }
+
+        lightboxImg.src = '';
+        newImg.src = elem.getAttribute('data-lightbox');
+        lightbox.classList.add('visible');  
+    }
+
+    //If we click any of these 2 elements, close the lightbox
+    if(elemID == 'lightbox-image' || elemID == 'lightbox-overlay')
+    {
+        event.preventDefault();
+
+        lightbox.classList.remove('visible');
     }
 }

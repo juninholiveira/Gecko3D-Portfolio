@@ -19,7 +19,6 @@ window.addEventListener
     "scroll",
     function(event)
     {
-        console.log("its working");
         //.scrolTop gets the number of pixels already scrolled from the top of the page
         scrollPos = body.scrollTop || html.scrollTop;
 
